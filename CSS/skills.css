@@ -1,0 +1,27 @@
+*{
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 90px;
+}
+
+
+html,body{
+    background-color: black;
+}
+
+table{
+    text-align: left;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+footer{
+    padding-right: 5%;
+    padding-top:0%;
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -85,7 +85,7 @@ el @ es un condicionante
     height: 200px;
     /*si haces un contenedor flex te ayuda al tipo de direccion tenga
     el contenido*/
-    display: flex;
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     animation-name:animacion_test;
