@@ -1,0 +1,79 @@
+@keyframes traslado{
+    from{
+        transform: translateX(0px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(600px);
+    }
+}
+
+@keyframes traslado_dos{
+    from{
+        transform: translateX(0px);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(500px);
+    }
+}
+
+body,html{
+    background-color: #000000;
+    padding-top: 1.5%;
+}
+
+.flex-container{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.anime1{
+    display: flex;
+    text-align: center;
+    animation-name: traslado;
+    animation-duration: 2s;
+    position: relative;
+    animation-timing-function: ease;
+    align-items: center;
+    animation-fill-mode: forwards;
+
+}
+
+.anime2{
+    display: flex;
+    text-align: center;
+    animation-name: traslado;
+    animation-duration: 1.75s;
+    animation-delay: 0.25s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.anime3{
+    display: flex;
+    text-align: center;
+    animation-name: traslado_dos;
+    animation-duration: 2.5s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+.anime4{
+    display: flex;
+    text-align: center;
+    animation-name: traslado;
+    animation-duration: 1.25s;
+    animation-delay: 0.75s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}

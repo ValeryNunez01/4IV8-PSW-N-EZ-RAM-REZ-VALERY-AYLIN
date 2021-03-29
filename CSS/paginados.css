@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+.flex-container{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    background-color: black;
+}
+
+.texto{
+    padding-left: 10%;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #ffffff;
+}
