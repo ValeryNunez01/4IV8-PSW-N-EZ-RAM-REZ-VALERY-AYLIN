@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preblemas Java Script</title>
+    <link rel="stylesheet" href="./CSS/problemas10.css">
+    <script src="JS/problemas.js"></script>
+</head>
+<body>
+<h1 size="100px" >PROBLEMAS</h1>
+    <nav class="menu">
+            <a href="#p1">Problem 1</a>
+            <a href="#p2">Problem 2</a>
+            <a href="#p3">Problem 3</a>
+            <a href="#p4">Problem 4</a>
+            <a href="#p5">Problem 5</a>
+            <a href="#p6">Problem 6</a>
+            <a href="#p7">Problem 7</a>
+            <a href="#p8">Problem 8</a>
+            <a href="#p9">Problem 9</a>
+            <a href="#p10">Problem 10</a>
+    </nav>
+
+<a id="p1"></a>
+<form method="post" name="tabla_1"> 
+    <table  align="center">
+    <td class="td_sup">Introduce la cantidad a invertir: $</td>
+                <td><input type="texto" name="cantidad_1"
+                    onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="interes"
+                    onclick="problema_1()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Su saldo total con interes al 2% es: </td>
+                <td><input type="text" name="sueldot_1"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_1()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p2" ></a>
+<form method="post" name="tabla_2"> 
+    <table align="center">
+    <td class="td_sup">Introduce el sueldo base: $</td>
+    <td><input type="texto" name="cantidad_2"
+                    onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+    <td class="td_sup">Introduce la ganancia por tus ventas $</td>
+            <td><input type="texto" name="cantidad_21"
+                onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Total más un 10% de comisión: </td>
+                <td><input type="text" name="total_2"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_2()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_2()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p3" ></a>
+<form method="post" name="tabla_3"> 
+    <table align="center">
+    <td class="td_sup">Introduce el total de la compra: $</td>
+                <td><input type="texto" name="cantidad_3"
+                    onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_3()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Total más un 10% de descuento: </td>
+                <td><input type="text" name="total_3"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_3()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p4" ></a>
+<form method="post" name="tabla_4"> 
+    <table align="center" class="tabla4">
+        <tr>
+            <td class="td_sup">Calificación de cada parcial: </td>
+        </tr>
+        <tr>
+    <td>1º Calificación<input type="texto" name="cantidad_41"
+                    onkeypress="return validar(event)"></td>
+    <td>2º Calificación<input type="texto" name="cantidad_42"
+                    onkeypress="return validar(event)"></td>
+    <td>3º Calificación<input type="texto" name="cantidad_43"
+                    onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+    <td class="td_sup">Calificación de tu examen final: </td>
+            <td><input type="texto" name="cantidad_44"
+                onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Calificación de tu trabajo final: </td>
+                        <td><input type="texto" name="cantidad_45"
+                            onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="calificación"
+                    onclick="problema_4()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_4()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Calificación final: </td>
+                <td><input type="text" name="total_4"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p5" ></a>
+<form method="post" name="tabla_5"> 
+    <table align="center">
+    <td class="td_sup">Total de alumnos: </td>
+    <td><input type="texto" name="cantidad_5"
+                    onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+    <td class="td_sup">Total de mujeres: </td>
+            <td><input type="texto" name="cantidad_51"
+                onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Porcentaje mujeres: </td>
+                <td><input type="text" name="total_52"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Porcentaje hombres: </td>
+                <td><input type="text" name="total_53"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_5()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_5()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p6" ></a>
+<form method="post" name="tabla_6"> 
+    <table align="center">
+    <tr>
+    <td class="td_sup">Introduzca la fecha de hoy: </td>
+    </tr>
+    <tr>
+    <td>Día<input type="texto" name="cantidad_6"
+                    onkeypress="return validar(event)"></td>
+    <td>Mes<input type="texto" name="cantidad_61"
+                    onkeypress="return validar(event)"></td>
+    <td>Año<input type="texto" name="cantidad_62"
+                    onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+    <tr>
+    <td class="td_sup">Introduzca su fecha de nacimiento: </td>
+    </tr>
+    <tr>
+    <td>Día<input type="texto" name="cantidad_63"
+                    onkeypress="return validar(event)"></td>
+    <td>Mes<input type="texto" name="cantidad_64"
+                    onkeypress="return validar(event)"></td>
+    <td>Año<input type="texto" name="cantidad_65"
+                    onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+        <td class="td_sup">Edad: </td>
+                <td><input type="text" name="total_66"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text" style="width: 210px"></td>
+    </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_6()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_6()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p7" ></a>
+<form method="post" name="tabla_7"> 
+    <table align="center">
+    <tr>
+    <td class="td_sup">Número 1: </td>
+    <td><input type="texto" name="cantidad_7"
+             onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+    <td class="td_sup">Número 2: </td>
+    <td><input type="texto" name="cantidad_71"
+            onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+        <td class="td_sup">Total: </td>
+                <td><input type="text" name="total_72"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+    </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_7()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_7()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p8" ></a>
+<form method="post" name="tabla_8"> 
+    <table align="center">
+    <tr>
+    <td class="td_sup">Número 1: </td>
+    <td><input type="texto" name="cantidad_8"
+             onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+    <td class="td_sup">Número 2: </td>
+    <td><input type="texto" name="cantidad_81"
+            onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+        <td class="td_sup">Número 3: </td>
+        <td><input type="texto" name="cantidad_82"
+                onkeypress="return validar(event)"></td>
+        </tr>
+    <tr>
+        <td class="td_sup">El número más grande es: </td>
+                <td><input type="text" name="total_83"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+    </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_8()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_8()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p9" ></a>
+<form method="post" name="tabla_9"> 
+    <table align="center">
+    <tr>
+        <td>Hora normal = $80</td>
+        <td>Hora extra = $160</td>
+    </tr>
+    <tr>
+        <td>Mayor a 8 horas extra = $240</td>
+    </tr>
+    <tr>
+    <td class="td_sup">Horas trabajadas: </td>
+    <td><input type="texto" name="cantidad_9"
+             onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+        <td class="td_sup">Ganancia total: </td>
+                <td><input type="text" name="total_91"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+    </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_9()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_9()"></td>
+            </tr>
+    </table>
+</form>
+
+
+<a id="p10" ></a>
+<form method="post" name="tabla_10"> 
+    <table class="tabla10" align="center">
+    <tr>
+    <td class="td_sup">Ingrese su salario: </td>
+    <td><input type="texto" name="cantidad_10"
+             onkeypress="return validar(event)"></td>
+    </tr>
+    <tr>
+        <td class="td_sup">Antigüedad en la empresa(si es menor a 1 año escriba 0)</td>
+    </tr>
+    <tr>
+        <td><input type="texto" name="cantidad_101"
+                 onkeypress="return validar(event)"></td>
+        </tr>
+    <tr>
+        <td class="td_sup">Utilidad total: </td>
+                <td><input type="text" name="total_102"
+                    id="cantidadi" readonly="readonly"
+                    class="input_text"></td>
+    </tr>
+            <tr>
+                <td class="td_inf"><input type="button" value="total"
+                    onclick="problema_10()"></td>
+                <td></td>
+                <td class="td_inf"><input type="button" value="borrar"
+                    onclick="borrar_10()"></td>
+            </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
