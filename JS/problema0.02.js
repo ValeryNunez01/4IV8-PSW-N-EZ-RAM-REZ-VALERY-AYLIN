@@ -1,0 +1,3 @@
+function resultado(){
+    document.getElementById()
+}
