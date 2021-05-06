@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial;
+}
+
+h1{
+  text-align: center; 
+  font-size: 40px;
+  padding: 15px;
+}
+
+table{
+    border: none;
+    margin-left: 10%;
+    width: 30%;
+}
+
+thead{
+    background-color: #1b4332;
+    color: white;
+    font-size: 19px;
+}
+
+tbody{
+    background-color: #b7e4c7;
+    text-align: center;
+    font-size: 18px;
+}
+
+a{
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 40%;
+}
+
+#primero{
+    margin-left: 40%;
+}
+
+#boton{
+    margin-left: 10%;
+    margin-bottom: 30px;
+    width: 20%;
+    background-color: #40916c;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+

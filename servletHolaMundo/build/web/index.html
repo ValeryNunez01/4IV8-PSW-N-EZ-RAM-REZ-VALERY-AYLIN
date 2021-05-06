@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro de Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/diseño.css">
+    </head>
+    <body>
+        
+        <div class="container" >
+           <script src="validacion_2.js"></script> 
+            <div class="containerRegistro">
+                
+                <h1>REGISTRO</h1>
+                
+                <form name="formulario" method="post" action="Regitro" onsubmit="return checar();">
+                    
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <br>
+                <input type="text" name="appat" id="appat" placeholder="Apellido paterno" >
+                <br>
+                <input type="text" name="appmat" id="apmat" placeholder="Apellido materno" >
+                <br>
+                <input type="number" name="edad" id="edad" placeholder="Edad">
+                <br>
+                <input type="text" name="correo" id="correo" placeholder="Correo">
+                <br>
+                <input type="submit" class="boton" value="Registro de Usuarios">
+                <input type="reset" class="boton" value="Borrar Registro" >
+            </form>
+            </div>
+            <br>
+            <div class="containerConsulta" >
+                <br>
+                <form method="get" name="consultarregistro" action="Consultar">
+                    <input type="submit" class="boton" value="Consultar Tabla de Usuarios" >
+                </form>
+            </div>
+            <br>
+            <div class="containerEliminar" >
+                <br>
+                <form method="post" name="formularioeliminar" action="Eliminar" onsubmit="return eliminar();">
+                    <input type="number" name="ideliminar" id="datob" placeholder="Id a eliminar">
+                    <br>
+                    <input type="submit"  class="boton" value="Eliminar Usuario" >
+                </form>
+                
+            </div>
+            
+            <br>
+            
+            <div class="containerActualizar">
+                <form method="post" name="formularioactualizar" action="Actualizar">               
+                    <input type="submit"  class="boton" value="Actualizar" >
+                </form>
+
+            </div>
+            
+            
+            
+        </div>
+    </body>
+</html>
